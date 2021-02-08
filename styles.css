@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(238, 236, 236);
+}
+
+#navbar header {
+    text-align: center;
+    padding: 5% 10%;
+    background-color: rgb(255, 52, 52);
+    color: white;
+    border-bottom: 1px solid grey;
+}
+
+#navbar .nav-link {
+    display: block;
+    padding: 5% 10%;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid grey;
+}
+
+#navbar .nav-link:hover {
+    color: white;
+    background-color:  rgb(255, 110, 110);
+}
+
+#main-doc {
+    margin-left: 250px;
+    padding: 2% 3%;
+}
+
+.main-section header {
+    font-size: 25px;
+    color: rgb(255, 52, 52);
+}
+
+#dosing_and_administration table {
+    width: 100%;
+    padding: 2% 0;
+}
+
+#dosing_and_administration table th {
+    background-color: rgb(255, 52, 52);
+    color: white;
+    padding: 1% 0;
+}
+
+#dosing_and_administration table td {
+    padding-left: 1%;
+}
+
+#dosing_and_administration code {
+    font-size: 15px;
+    background-color: rgb(238, 236, 236);
+    display: block;
+    padding: 0 1%;
+    margin-bottom: 2%;
+}
+
+#drug_interactions code {
+    background-color: rgb(238, 236, 236);
+    margin-left: 5%;
+}
+
+#adverse_effects code, #contraindications code {
+    background-color: rgb(238, 236, 236);
+}
+
+#resources a {
+    text-decoration: none;
+}
+
+#resources a:hover {
+    color: rgb(255, 110, 110);
+}
+
+#back_to_top {
+    float: right;
+    margin-bottom: 2%;
+}
+
+#back_to_top button {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    background-color:  rgb(238, 236, 236);
+    color: rgb(255, 52, 52);
+    border: none;
+    border-radius: 5%;
+}
+
+#back_to_top button:hover {
+    background-color: rgb(255, 110, 110);
+    color: white;
+}
+
+@media (max-width: 625px) {
+    #navbar {
+        width: 100%;
+        height: 200px;
+        border-bottom: 2px solid rgb(255, 110, 110);
+        text-align: center;
+    }
+
+    #navbar .nav-link:last-child {
+        border: none;
+    }
+    
+    #main-doc {
+        margin: 200px 0 0 0;
+    }
+
+    #back_to_top {
+        float: unset;
+        display: block;
+        text-align: center;
+    }
+}
